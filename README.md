@@ -1,0 +1,2 @@
+# KoriHost
+Hosting
