@@ -1,0 +1,81 @@
+    /* Ocultar radio buttons completamente */
+    input[type="radio"] {
+        display: none !important;
+        visibility: hidden !important;
+        position: absolute !important;
+        left: -9999px !important;
+        opacity: 0 !important;
+    }
+
+    /* Ocultar TODOS los paneles por defecto */
+    .tab-panel {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+
+    /* Mostrar solo el panel correspondiente cuando su radio está checked */
+    #tab-about:checked~.tab-content .tab-panel:nth-child(1) {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    #tab-personal:checked~.tab-content .tab-panel:nth-child(2) {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    #tab-likes:checked~.tab-content .tab-panel:nth-child(3) {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    #tab-contact:checked~.tab-content .tab-panel:nth-child(4) {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    /* Estilos para pestañas activas */
+    #tab-about:checked~.tab-nav label[for="tab-about"] {
+        background: linear-gradient(135deg, #ff6b9d, #ffc1cc) !important;
+        color: white !important;
+        border: 2px solid #ff6b9d !important;
+        transform: translateY(-3px) !important;
+        box-shadow: 0 8px 20px rgba(255, 107, 157, 0.4) !important;
+    }
+
+    #tab-personal:checked~.tab-nav label[for="tab-personal"] {
+        background: linear-gradient(135deg, #ff6b9d, #ffc1cc) !important;
+        color: white !important;
+        border: 2px solid #ff6b9d !important;
+        transform: translateY(-3px) !important;
+        box-shadow: 0 8px 20px rgba(255, 107, 157, 0.4) !important;
+    }
+
+    #tab-likes:checked~.tab-nav label[for="tab-likes"] {
+        background: linear-gradient(135deg, #ff6b9d, #ffc1cc) !important;
+        color: white !important;
+        border: 2px solid #ff6b9d !important;
+        transform: translateY(-3px) !important;
+        box-shadow: 0 8px 20px rgba(255, 107, 157, 0.4) !important;
+    }
+
+    #tab-contact:checked~.tab-nav label[for="tab-contact"] {
+        background: linear-gradient(135deg, #ff6b9d, #ffc1cc) !important;
+        color: white !important;
+        border: 2px solid #ff6b9d !important;
+        transform: translateY(-3px) !important;
+        box-shadow: 0 8px 20px rgba(255, 107, 157, 0.4) !important;
+    }
+
+    /* Iconos blancos para pestañas activas */
+    #tab-about:checked~.tab-nav label[for="tab-about"] i,
+    #tab-personal:checked~.tab-nav label[for="tab-personal"] i,
+    #tab-likes:checked~.tab-nav label[for="tab-likes"] i,
+    #tab-contact:checked~.tab-nav label[for="tab-contact"] i {
+        color: white !important;
+    }
